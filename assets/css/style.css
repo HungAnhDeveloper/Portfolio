@@ -883,13 +883,18 @@ ol {
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    display: block;
-    line-height: 55px;
+    display: flex; /* Sử dụng flex để căn giữa */
+    align-items: center; /* Căn giữa theo chiều dọc */
+    justify-content: center; /* Căn giữa theo chiều ngang */
     color: #fff;
     font-size: 20px;
     border: 1px solid rgba(255,255,255,0.05);
     background: linear-gradient(120deg, rgba(255,255,255,0.1), rgba(255,255,255,0.01));
     transition: .3s;
+}
+
+.credential-area .credential-sidebar .social-links li a i {
+    line-height: 1; /* Đảm bảo line-height không làm lệch icon */
 }
 .credential-area .credential-sidebar .social-links li a:hover {
     background: #ffffff;
@@ -1398,10 +1403,14 @@ ol {
     height: 68px;
     border-radius: 10px;
     flex: none;
-    text-align: center;
-    line-height: 75px;
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
     font-size: 30px;
     color: #ffffff;
+}
+.contact-area .contact-infos .contact-details li .icon-box i {
+    line-height: 1; 
 }
 .contact-area .contact-infos .contact-details li .icon-box::after,
 .contact-area .contact-infos .contact-details li .icon-box::before {
@@ -1432,13 +1441,16 @@ ol {
 .contact-area .social-links li a {
     width: 82px;
     height: 82px;
-    display: block;
-    text-align: center;
-    line-height: 92px;
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
     color: #ffffff;
     border-radius: 50%;
     font-size: 32px;
     transition: .3s;
+}
+.contact-area .social-links li a i {
+    line-height: 1; 
 }
 .contact-area .social-links li a:hover {
     background: #ffffff;
