@@ -482,8 +482,8 @@ ol {
     gap: 30px;
 }
 .about-area .about-me-box .img-box {
-    width: 244px;
-    height: 244px;
+    width: 224px;
+    height: 224px;
     position: relative;
     overflow: hidden;
     background: linear-gradient(90deg, #3C58E3 -15%, #C2EBFF 58%, #5AB5E2 97%);
