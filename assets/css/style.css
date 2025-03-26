@@ -411,6 +411,13 @@ ol {
 }
 .header-area .logo img {
     display: block;
+    height: 40px;
+    width: auto;
+}
+@media (max-width: 767px) {
+    .header-area .logo img {
+        height: 30px; /* Nhỏ hơn trên mobile, ví dụ 60px */
+    }
 }
 .header-area .navbar {
     margin: 0;
@@ -486,8 +493,9 @@ ol {
     height: 224px;
     position: relative;
     overflow: hidden;
-    background: linear-gradient(90deg, #3C58E3 -15%, #C2EBFF 58%, #5AB5E2 97%);
+    /* background: linear-gradient(90deg, #3C58E3 -15%, #C2EBFF 58%, #5AB5E2 97%); */
     border-radius: 30px 0 30px 0;
+    border: 1px solid hsla(46, 100%, 86%, 0.315);
     flex: none;
 }
 
@@ -509,8 +517,8 @@ ol {
     margin-bottom: 3px;
 }
 .about-area .about-me-box .infos h1 {
-    font-size: 34px;
-    line-height: 40px;
+    font-size: 32px;
+    line-height: 38px;
     color: hsl(46, 100%, 86%);
     font-weight: 500;
     margin-bottom: 12px;
@@ -1477,6 +1485,9 @@ ol {
 }
 .footer-area .footer-content .logo img {
     display: block;
+    height: 40px;
+    width: auto;
+    object-fit: contain;
 }
 .footer-area .footer-content .footer-menu {
     margin: 33px 0 37px 0;
@@ -1982,6 +1993,12 @@ ol {
     }
     .blog-details-area .blog-details-content .comments-and-form-wrap .comments .children {
         padding-left: 0;
+    }
+}
+@media (max-width: 585px) {
+    .about-area .about-me-box .infos h1 {
+        font-size: 25px; /* Giảm từ 34px xuống 28px */
+        line-height: 34px; /* Điều chỉnh line-height cho phù hợp */
     }
 }
 
